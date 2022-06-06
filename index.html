@@ -9,7 +9,48 @@
     <link rel="shortcut icon" href="images/icon.ico">
 </head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+<header>
+            <h1 class="fName"><a href="index.html">Reem</a></h1>
+            <h1 class="lName"><a href="index.html">Alsharabi</a></h1>
+        <div id="menu" class="menu">
+            <ul>
+                <li><a href = "about.html" id = "link1">about me</a></li>
+                <li><a href = "projects.html" id = "link2">projects</a></li>
+                <li><a href = "blog.html" id = "link3">blog</a></li>
+                <li><a href = "contact.html" id = "link4">contact me</a></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <div class="content">
+            <figure>
+                <img src="images/reem.jpeg" alt="img">
+            </figure>
+            <div class="tagline">
+                <div id="str"></div>
+                <span>I'm a Computer Science student at <a href="https://www.effatuniversity.edu.sa/English/Pages/default.aspx" target="_blank">Effat University</a> who's committed to learning, developing skills in Software Engineering and team contribution. Self-directed and energetic with superior performance in both independent and collaborative environments.</span>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="social">
+            <a href="https://github.com/ReemCodes" target="_blank"><img src="images/github.png" alt="github"></a>
+            <a href="https://www.linkedin.com/in/reem-alsharabi-5370851b6" target="_blank"><img src="images/linkedin.png" alt="linkedin"></a>
+            <a href="mailto:reem.sharabi03@gmail.com" target="_blank"><img src="images/mail.png" alt="mail"></a>
+            <a href="https://twitter.com/itsR33m" target="_blank"><img src="images/twitter.png" alt="twitter"></a>
+        </div>
+        <strong>(c) 2021 - today / Copyright Reem Alsharabi. All Rights Reserved.</strong>
+    </footer>
+    <script>
+        var string = "Hi! I'm Reem.";
+        var str = string.split("");
+        var el = document.getElementById('str');
+        (function animate() {
+        str.length > 0 ? el.innerHTML += str.shift() : clearTimeout(running); 
+        var running = setTimeout(animate, 90);
+        })();
+    </script>
+    <script src="script/myScript.js"></script>
+
 </body>
 </html>
