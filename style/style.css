@@ -1,0 +1,429 @@
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Syne+Tactile&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Just+Another+Hand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
+html{
+    scroll-behavior: smooth;
+}
+* {
+  box-sizing: border-box;
+}
+
+body{
+    background-color: #fdfaf8ed;
+    margin: 0em;
+    padding: 0em;
+}
+h2{
+    font-size: 3rem;
+    font-weight: bold;
+    margin-top: 0.5em;
+    margin-bottom: 0em;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+h3{
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    margin: 1em 1em 0.6em 0em;
+}
+h4{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    margin: 0em 0em 0.5em 0em;
+    font-weight: 100;
+}
+p, span{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.25rem;
+    margin-bottom: 0em;
+}
+
+a{
+    color: black;
+}
+header{
+    display: flex;
+}
+.fName a{
+    font-family: 'Cedarville Cursive', cursive;
+    margin-left: 1em;
+    font-size: 2rem;
+    text-decoration: none;
+    color: black;
+}
+.lName a{
+    position: absolute;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: lighter;
+    top: 3.9em;
+    left: 4.5em;
+    text-decoration: none;
+    color: black;
+}
+.menu{
+    float: right;
+    z-index: 1;
+    flex: 1;
+    margin-right: 1em;
+    overflow: hidden;
+}
+
+.menu ul{
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+.menu ul li{
+    text-transform: uppercase;
+    display: inline-block;
+    list-style: none;
+    padding: 4.5em 2em 0em 0em;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 0.9rem;
+}
+.menu ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+/*
+.menu a{
+    text-transform: uppercase;
+    display: block;
+    list-style: none;
+    padding: 4.5em 2em 0em 0em;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 0.9rem;
+    color: black;
+    text-decoration: none;
+    float: right;
+}
+.menu .icon {
+    display: none;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .menu a:not(:first-child) {display: none;}
+    .menu a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .menu.responsive {position: relative;}
+    .menu.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .menu.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
+  */
+#menu a:hover {
+    text-decoration: underline;
+    font-weight: 900;
+}
+#menu li a:active {
+    text-decoration: underline;
+    font-weight: 900;
+}
+
+main{
+    width: 100%;
+    height: 100%;
+
+}
+.content{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    /*grid-row: 6 / 7;
+    grid-column: 9/13;
+    min-height: 30%;*/
+}
+
+
+.content img{  
+    width: 90%;
+    max-width: 30%;
+    margin: .7em;
+}
+
+.tagline #str{
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    margin: 1em 1em 0.6em 0em;
+    color: #000;
+}
+.tagline{
+    margin: .7em;
+    width: 95%;
+    max-width: 50%;
+     /*background-color: #fff;
+     z-index: 100;
+     position: absolute;
+     color: black;
+     left: 0;
+     bottom: 0px;
+     
+     margin: 0em;
+     min-height: 30%;
+     top: 29em;
+     padding: 1rem 1em 1em 5em;*/
+ }
+ .tagline a{
+     font-family: 'Roboto', sans-serif;
+     font-size: 1.25rem;
+     color: black;
+ }
+ @media screen and (max-width: 600px) {
+    .content{
+        flex-direction: column;
+        }
+        
+        .tagline #str{
+            font-size: 1.5rem;
+        }
+        p, span, .tagline a{
+            font-size: 0.75rem;
+        }
+        .fName a{
+            
+            font-size: 1.9rem;
+            
+        }
+        .lName a{
+            
+            font-size: 1rem;
+            top: 4.2em;
+            left: 4em;
+        }
+    }
+footer{
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+.social{
+    align-items: center;
+}
+.social img{
+    max-width: 3em;
+    padding: 1.5em 0.8em 2.5em 0em;
+}
+.social img:hover, .projGitHub img:hover{
+    opacity: 0.7;
+}
+
+strong{
+    padding-bottom: 2em;
+}
+
+.profile{
+    margin: auto;
+    width: 100%;
+    box-sizing: border-box;
+}
+.profile::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.bio h4{
+    text-align: center;
+}
+.myList{
+    text-align: center;
+    margin-top: 4em;
+}
+.myList ul li, .bio ul li{
+    padding-bottom: 0.75em;
+    font-size: 1.2rem;
+    font-family: 'Open Sans', sans-serif;
+}
+.myList ul{
+    display: table;
+    margin: 0 auto;
+    text-align: left;
+}
+.myList a{
+    color: black;
+}
+.bioList{
+    display: flex;
+    justify-content: center;
+}
+
+.shapesContainer{
+    float: left;    
+    position: absolute;
+}
+.shapes{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.dot {
+    height: 1.2em;
+    width: 1.2em;
+    background-color: black;
+    border-radius: 50%;
+    float: left;
+    margin-top: 5em;
+    margin-left: 1em;
+}
+
+.vl {
+    border-left: 0.15em solid black;
+    min-height: 155em;
+    margin-left: 1em;
+}
+
+.dot2 {
+    height: 1.2em;
+    width: 1.2em;
+    background-color: black;
+    border-radius: 50%;
+    float: left;
+    margin-top: -2em;
+    margin-left: 1em;
+}
+.achContainer{
+    padding-top: 2.5em;
+}
+.ach img{
+    margin-left: 3em;
+    margin-bottom: 1em;
+
+    max-width: 12em;
+}
+.cer img{
+    margin-right: 3em;
+    max-width: 19em;
+}
+
+#first-heading, .first-heading{
+    padding-left: 1.25em;
+    font-size: 2.25rem;
+}
+.cerType{
+    font-size: 1.75rem;
+    padding-left: 3em;
+    margin-top: 0.2em;
+}
+hr{
+    max-width: 90%;
+}
+
+.achBody{
+    margin-left: 1em;
+}
+
+.ach, .cer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2.5em;
+}
+
+.achText{
+    margin-left: 3em;
+    max-width: 22em;
+    text-align: center;
+}
+.achRow, .cerRow {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 3em;
+}
+@media (max-width: 1000px) {
+    .achRow, .cerRow {
+      flex-direction: column;
+    }
+  }
+  
+.cerRow{
+    margin-left: 3em;
+}
+.back img{
+    max-width: 2.5em;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 1em;
+}
+.proj{
+    text-align: center;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+}
+.grid-item {
+    display: inline-block;
+    padding: 1em;
+    margin: 0.5em;
+    text-align: left;
+    max-width: 37em;
+    background-color: #fff;
+}
+.grid-item:hover{
+    border: 0.1em solid black;
+}
+.grid-item h4{
+    margin: 0.5em 0em 0.5em 0em;
+}
+#projH2{
+    margin-bottom: 0.5em;
+    font-size: 3rem;
+    font-weight: bold;
+    margin-top: 0.5em;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.grid-item img{
+    max-width:37em;
+}
+
+.projGitHub{
+    float: right;
+}
+.projGitHub img{
+    max-width: 2.5em;
+    margin: -2em 2em 0em 0em;
+}
+
+.projTxt{
+    max-width: 35em;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.25rem;
+    margin-top: 0.5em;
+}
+.techLogo {
+    font-family: 'Syne Tactile', cursive;
+    font-size: 1rem;
+}
+
+
+
