@@ -1,53 +1,189 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reem Alsharabi</title>
     <link href="style/style.css" rel="stylesheet" type="text/css" />
-    <link rel="shortcut icon" href="images/icon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <header>
+        <div class="logo">
             <h1 class="fName"><a href="index.html">Reem</a></h1>
             <h1 class="lName"><a href="index.html">Alsharabi</a></h1>
-        <div id="menu" class="menu">
-            <ul>
-                <li><a href = "about.html" id = "link1">about me</a></li>
-                <li><a href = "projects.html" id = "link2">projects</a></li>
-                <li><a href = "blog.html" id = "link3">blog</a></li>
-                <li><a href = "contact.html" id = "link4">contact me</a></li>
-            </ul>
+        </div>
+        <div id="myMenu" class="menu">
+            
+            <a href = "index.html" id="link1">home</a>
+            <a href = "#skills" id="link2">skills</a>
+            <a href = "#projects" id="link3">projects</a>
+            <a href = "https://reemcodes.github.io/docs/resume.pdf" target="_blank">resume</a>
+            <a href = "#contact" id="link4">contact me</a>
+
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+              </a>
         </div>
     </header>
     <main>
+        <div class="sec">
         <div class="content">
+            <div class="bioColumn">
                 <img src="images/reem.jpeg" alt="img">
+                <h4>Reem Alsharabi</h4>
+
+                    <div class="social">
+                        <a href="https://github.com/ReemCodes" target="_blank"><img src="images/github.png" alt="github"></a>
+                        <a href="https://www.linkedin.com/in/reem-alsharabi-5370851b6" target="_blank"><img src="images/linkedin.png" alt="linkedin"></a>
+                        <a href="mailto:reem.sharabi03@gmail.com" target="_blank"><img src="images/mail.png" alt="mail"></a>
+                        <a href="https://twitter.com/itsR33m" target="_blank"><img src="images/twitter.jpg" alt="twitter"></a>
+                    </div>
+            </div>
+                
             <div class="tagline">
                 <div id="str"></div>
-                <span>I'm a Computer Science student at <a href="https://www.effatuniversity.edu.sa/English/Pages/default.aspx" target="_blank">Effat University</a> who's committed to learning, developing skills in Software Engineering and team contribution. Self-directed and energetic with superior performance in both independent and collaborative environments.</span>
+                <span>I'm a third-year Computer Science student at <a href="https://www.effatuniversity.edu.sa/English/Pages/default.aspx" target="_blank">Effat University</a>
+                     with a concentration in Artificial Intelligence. I'm the Programming Club founder and leader at Effat University, a technical assistant in 
+                     <a href="https://gdsc.community.dev/effat-university/" target="_blank">GDSC</a> core team, 
+                     and a <a href="https://developers.google.com/womentechmakers" target="_blank">Women Techmakers</a> ambassador.
+                    <br><br> I like cooking, music, <span class="comment">//and coding ;)</span>
+                </span>
             </div>
         </div>
-    </main>
-    <footer>
-        <div class="social">
-            <a href="https://github.com/ReemCodes" target="_blank"><img src="images/github.png" alt="github"></a>
-            <a href="https://www.linkedin.com/in/reem-alsharabi-5370851b6" target="_blank"><img src="images/linkedin.png" alt="linkedin"></a>
-            <a href="mailto:reem.sharabi03@gmail.com" target="_blank"><img src="images/mail.png" alt="mail"></a>
-            <a href="https://twitter.com/itsR33m" target="_blank"><img src="images/twitter.png" alt="twitter"></a>
+    </div>
+        
+            <div id="skills">
+                <div class="sec">
+                <h3>Things I can do</h3>
+                <div class="row">
+                    <div class="element">
+                        <img src="images/java.png" alt="java">
+                        <h2>Java, Swing</h2>
+                    </div>
+                    <div class="element">
+                        <img src="images/cpp.png" alt="cpp">
+                        <h2>C++</h2>
+                    </div>
+                    <div class="element">
+                        <img src="images/python.png" alt="python">
+                        <h2>Python</h2>
+                    </div>
+                    <div class="element">
+                        <img src="images/matlab.png" alt="matlab">
+                        <h2>MATLAB</h2>
+                    </div>
+                    <div class="element">
+                        <img src="images/Tensorflow.png" alt="Tensorflow">
+                        <h2>Tensorflow</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="element">
+                        <img src="images/html.png" alt="html">
+                        <h2>HTML</h2>
+                    </div>
+                    <div class="element">
+                        <img src="images/css.png" alt="css">
+                        <h2>CSS</h2>
+                    </div>
+                    <div class="element">
+                        <img src="images/js.png" alt="js">
+                        <h2>JavaScript</h2>
+                    </div>
+                    <div class="element">
+                        <img src="images/php.png" alt="php">
+                        <h2>PHP</h2>
+                    </div>
+                    <div class="element">
+                        <img src="images/mysql.png" alt="mysql">
+                        <h2>SQL, MySQL</h2>
+                    </div>
+                </div>
+                <h3>Currently working on:</h3>
+                <p>Learning ML and optimization</p>
+                </div>
+            </div>
+
+            <div id="projects">
+                <div class="sec">
+                    <h3>Collection of my projects</h3>
+                    <div class="row">
+                        
+                        <div class="proj">
+                            <img src="images/bc.png" alt="bc">
+                            <h4>Book Club Website</h4>
+                            <p>Implemented a full stack, database-driven web application that requires admin credentials.</p>
+                            <h2>HTML, CSS, JS, PHP, SQL</h2>
+                            <a href="https://github.com/ReemCodes/book-club" target="_blank" class="projGitHub"><img src="images/github.png" alt="github"></a>
+                        </div>
+
+                        <div class="proj">
+                            <img src="images/na.png" alt="na">
+                            <h4>Numerical Methods</h4>
+                            <p>Implemented some of the numerical solutions for non-linear equations.</p>
+                            <h2>MATLAB</h2>
+                            <a href="https://github.com/ReemCodes/Numerical_Analysis" target="_blank" class="projGitHub"><img src="images/github.png" alt="github"></a>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="proj">
+                            <img src="images/adp.png" alt="adp">
+                            <h4>School Management System</h4>
+                            <p>Developed a program to manage the data for a school with students and courses using objects from the different classes, based on a UML class diagram.</p>
+                            <h2>C++, Makefile</h2>
+                            <a href="https://github.com/ReemCodes/cpp-school" target="_blank" class="projGitHub"><img src="images/github.png" alt="github"></a>
+
+                        </div>
+                        <div class="proj">
+                            <img src="images/oop.png" alt="oop">
+                            <h4>Movie Rating System</h4>
+                            <p>Developed a system that provides information about movies as well as their cast and crew, the system allows users to create an account to review the movies, and it requires admin credentials</p>
+                            <h2>Java, Swing, MySQL</h2>
+                            <a href="https://github.com/ReemCodes/OOP" target="_blank" class="projGitHub"><img src="images/github.png" alt="github"></a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="contact">
+                <div class="sec">
+                    <h3>Contact me</h3>
+                    <div class="communication">
+                        <ul>
+                            <li><a href="mailto:reem.sharabi03@gmail.com" target="_blank"><i class="fa fa-envelope-o" aria-hidden="true"></a></i>Reem.sharabi03@gmail.com</li>
+                            <li><a href="https://twitter.com/itsR33m" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>@itsR33m</li>
+                            <li><i class="fa fa-map-marker" aria-hidden="true"></i>Jeddah, Saudi Arabia</li>
+                        </ul>
+                        
+                    </div>
+                </div>
+            </div>
         </div>
-        <strong>(c) 2021 - today / Copyright Reem Alsharabi. All Rights Reserved.</strong>
-    </footer>
+
+    <div class="sign">made by Reem :3</div>
+</main>
     <script>
-        var string = "Hi! I'm Reem.";
+        var string = "Biography";
         var str = string.split("");
         var el = document.getElementById('str');
         (function animate() {
         str.length > 0 ? el.innerHTML += str.shift() : clearTimeout(running); 
-        var running = setTimeout(animate, 90);
+        var running = setTimeout(animate, 120); //larger = slower
         })();
-    </script>
-    <script src="script/myScript.js"></script>
 
+        function myFunction() {
+        var x = document.getElementById("myMenu");
+        if (x.className === "menu") {
+            x.className += " responsive";
+        } else {
+            x.className = "menu";
+        }
+        }
+
+    </script>
 </body>
 </html>
