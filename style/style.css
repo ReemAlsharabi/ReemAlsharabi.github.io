@@ -25,7 +25,7 @@ body{
 }
 h2{
     font-family: 'Nanum Gothic Coding', monospace, 'Roboto', sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.15rem;
 }
 h3{
     font-family: 'Nanum Gothic Coding', monospace;
@@ -34,13 +34,13 @@ h3{
 }
 h4{
     font-family: 'Nanum Gothic Coding', monospace;
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin: 0.7em 0em 0.7em 0em;
     font-weight: 100;
 }
 p, span{
     font-family: 'Nanum Gothic Coding', monospace, 'Open Sans', sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     margin: 0em;
     line-height: 1.7em;
 }
@@ -123,7 +123,7 @@ main{
     align-items: center;
 }
 .social img{
-    max-width: 3em;
+    max-width: 2.2em;
     padding-left: 0.35em;
 }
 .social img:hover, .projGitHub img:hover{
@@ -150,7 +150,7 @@ main{
 
 .tagline #str{
     font-family: 'Nanum Gothic Coding', monospace, 'Roboto', sans-serif;
-    font-size: 2.25rem;
+    font-size: 2rem;
     margin: 1em 1em 0.6em 0em;
     color: #000;
 }
@@ -161,7 +161,7 @@ main{
  }
  .tagline a{
      font-family: 'Nanum Gothic Coding', monospace, 'Roboto', sans-serif;
-     font-size: 1.5rem;
+     font-size: 1.2rem;
      color: black;
  }
  .tagline a:hover{
@@ -196,7 +196,7 @@ main{
     padding: 2em 0em 2em 0em;
 }
 .element img{
-    width: 25%;
+    width: 20%;
 }
 
  #projects{
