@@ -252,9 +252,7 @@ opacity: 0.7;
 .location{
     background-image: url("images/location.png");
 }
-::selection {
-    background: #fefe25
-  }
+
 
 .sign{
     padding: 1em;
