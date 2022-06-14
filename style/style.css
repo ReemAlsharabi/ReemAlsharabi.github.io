@@ -217,6 +217,8 @@ main{
     align-items: center;
     text-align: center;
     padding: 1.5em 0em 1.5em 0em;
+    display: flex;
+    flex-direction: column;
 }
 #contact img{
     width: 15%;
