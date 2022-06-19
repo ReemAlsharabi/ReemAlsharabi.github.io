@@ -32,7 +32,7 @@ h3{
     font-size: 2rem;
     font-weight: 100;
 }
-h4, .projTxt a span{
+h4, .bioColumn h1{
     font-family: 'Nanum Gothic Coding', monospace;
     font-size: 1.5rem;
     margin: 0.7em 0em 0.7em 0em;
@@ -126,7 +126,7 @@ main{
     max-width: 2.2em;
     padding-left: 0.35em;
 }
-.social img:hover, .projGitHub img:hover, .communication a:hover, .tagline a:hover, .projTxt a span:hover{
+.social img:hover, .projGitHub img:hover, .communication a:hover, .tagline a:hover{
     opacity: 0.7;
 }
 .content{
@@ -266,7 +266,7 @@ main{
         .tagline{
             width: 90%;
         }
-        .tagline #str, h3, h4{
+        .tagline #str, h3, h4, .bioColumn h1{
             font-size: 1.5rem;
         }
         p, span, .tagline a{
