@@ -123,7 +123,7 @@ main{
     align-items: center;
 }
 .social img{
-    max-width: 2.2em;
+    max-width: 2.5em;
     padding-left: 0.35em;
 }
 .social img:hover, .projGitHub img:hover, .communication a:hover, .tagline a:hover{
