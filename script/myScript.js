@@ -54,10 +54,7 @@ const onGenerateSubmit = (e) => {
   if (url === '') {
     alert('Please enter a URL');
   } else {
-    showSpinner();
-    // Show spinner for 1 sec
     setTimeout(() => {
-      hideSpinner();
       generateQRCode(url, size);
 
       // Generate the save button after the qr code image src is ready
@@ -89,18 +86,6 @@ const clearUI = () => {
   }
 };
 
-// Show spinner
-const showSpinner = () => {
-  const spinner = document.getElementById('spinner');
-  spinner.style.display = 'block';
-};
-
-// Hide spinner
-const hideSpinner = () => {
-  const spinner = document.getElementById('spinner');
-  spinner.style.display = 'none';
-};
-
 // Create save button to download QR code as image
 const createSaveBtn = (saveUrl) => {
   const link = document.createElement('a');
@@ -112,7 +97,5 @@ const createSaveBtn = (saveUrl) => {
   link.innerHTML = 'Save Image';
   document.getElementById('generated').appendChild(link);
 };
-
-hideSpinner();
 
 form.addEventListener('submit', onGenerateSubmit);
