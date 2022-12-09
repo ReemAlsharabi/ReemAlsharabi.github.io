@@ -2,14 +2,19 @@
 
 <html lang="en">
 <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="Description" CONTENT="Reem Alsharabi Computer Science student at Effat University" />
-    <meta name="google-site-verification" content="VG0rndKOOja4zWGQ3jv7I0H5-ulv57H0TLfgSytMMHU" />
+    <meta name="google-site-verification" content="VG0rndKOOja4zWGQ3jv7I0H5-ulv57H0TLfgSytMMHU">
     <title>Reem Alsharabi</title>
     <link rel = "icon" href = "images/icon.png" type = "image/x-icon">
-    <link href="style/style.css" rel="stylesheet" type="text/css" />
+    <link href="style/style.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"
+      integrity="sha512-CNgIRecGo7nphbeZ04Sc13ka07paqdeTu0WR1IM4kNcpmBAUSHSQX0FslNhTDadL4O5SAGapGt4FodqL8My0mA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
 </head>
 <body>
     <header>
@@ -21,7 +26,6 @@
             <a href = "#home" class="home">home</a>
           </div>
     </header>
-    <body>
     <main>
 
         <h1>QR Code Generator</h1>
@@ -30,14 +34,14 @@
             Enter your URL below to generate a QR Code and download the image.
           </p>
 
-          <form id="generate-form" class="mt-4">
+          <form id="generate-form">
             <input
               id="url"
               type="url"
               placeholder="Enter a URL"
               class="w-full border-2 border-gray-200 rounded p-3 text-grey-dark mr-2 focus:outline-none mb-5"
               required
-            />
+            >
 
             <select
               class="w-full border-2 border-gray-200 rounded p-3 text-grey-dark mr-2 focus:outline-none"
@@ -59,9 +63,6 @@
               Generate QR Code
             </button>
           </form>
-
-      </div>
-
       <div
         id="generated"
         class="max-w-5xl m-auto flex flex-col text-center align-center justify-center mt-20"
@@ -96,12 +97,8 @@
                             <a href="mailto:reem.alsharabi@outlook.com" target="_blank"><img src="images/mail.png" alt="mail"></a>
                         </div>
                         
-                    </div>
-                </section>
-            </div >
-    <div class="sign">Reem :3</div>
-</main>
 
+    <div class="sign">Reem :3</div>
     <script src="script/myScript.js"></script>
 </body>
 </html>
