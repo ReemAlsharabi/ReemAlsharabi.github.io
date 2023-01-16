@@ -6,7 +6,7 @@
     <meta name="Description" CONTENT="Reem Alsharabi Computer Science student at Effat University" />
     <meta name="google-site-verification" content="VG0rndKOOja4zWGQ3jv7I0H5-ulv57H0TLfgSytMMHU" />
     <title>Reem Alsharabi</title>
-    <link rel = "icon" href = "images/icon.png" type = "image/x-icon">
+    <link rel="icon" href="images/icon.png" type="image/x-icon">
     <link href="style/style.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -17,42 +17,43 @@
             <h1 class="lName"><a href="index.html">Alsharabi</a></h1>
         </div>
         <div id="myMenu" class="menu">
-            <a href = "#home" class="home">home</a>
-            <a href = "#skills" class="skills">skills</a>
-            <a href = "#projects" class="projects">projects</a>
-            <a href = "#contact" class="contact">contact me</a>
-            <a href = "https://reemalsharabi.github.io/docs/resume.pdf" target="_blank">résumé</a>
-            
+            <a href="#home" class="home">home</a>
+            <a href="#skills" class="skills">skills</a>
+            <a href="#projects" class="projects">projects</a>
+            <a href="#contact" class="contact">contact me</a>
+            <a href="https://reemalsharabi.github.io/docs/resume.pdf" target="_blank">résumé</a>
+
             <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
         </div>
     </header>
     <main>
         <section id="home" class="underlineNav">
-        <div class="content">
-            <div class="bioColumn">
-                <img src="images/reem.jpeg" alt="img">
-                <h1>Reem Alsharabi</h1>
+            <div class="content">
+                <div class="bioColumn">
+                    <img src="images/reem.jpeg" alt="img">
+                    <h1>Reem Alsharabi</h1>
                     <div class="social">
                         <a href="https://github.com/reemalsharabi" target="_blank"><img src="images/github.png" alt="github"></a>
                         <a href="https://www.linkedin.com/in/reem-alsharabi-5370851b6" target="_blank"><img src="images/linkedin.png" alt="linkedin"></a>
                         <a href="mailto:reem.alsharabi@outlook.com" target="_blank"><img src="images/mail.png" alt="mail"></a>
                     </div>
+                </div>
+
+                <div class="tagline">
+                    <div id="str"></div>
+                    <span>
+                        I'm a Computer Science junior at <a href="https://www.effatuniversity.edu.sa" target="_blank">Effat University</a>
+                        with a concentration in Artificial Intelligence. I'm the Programming Club founder and leader at Effat University, a technical assistant in
+                        <a href="https://gdsc.community.dev/effat-university/" target="_blank">GDSC</a> core team,
+                        and an ambassador of <a href="https://developers.google.com/womentechmakers" target="_blank">Women Techmakers</a>.
+
+                    </span>
+                </div>
             </div>
-                
-            <div class="tagline">
-                <div id="str"></div>
-                <span>I'm a Computer Science junior at <a href="https://www.effatuniversity.edu.sa" target="_blank">Effat University</a>
-                     with a concentration in Artificial Intelligence. I'm the Programming Club founder and leader at Effat University, a technical assistant in 
-                     <a href="https://gdsc.community.dev/effat-university/" target="_blank">GDSC</a> core team, 
-                     and an ambassador of <a href="https://developers.google.com/womentechmakers" target="_blank">Women Techmakers</a>.
-                    
-                </span>
-            </div>
-        </div>
-    </section >
-        
-            <div id="skills" class="underlineNav">
-                <section>
+        </section>
+
+        <div id="skills" class="underlineNav">
+            <section>
                 <h3>Things I can do</h3>
                 <div class="row">
                     <div class="element">
@@ -98,83 +99,87 @@
                         <h2>SQL, MySQL</h2>
                     </div>
                 </div>
-                
-                </section>
-            </div >
 
-            <div id="projects" class="underlineNav">
-                <section>
-                    <h3>Coding projects</h3>
-                    <div class="proj">
-                            <div class = "projTxt"><h4>Word Game</h4><a href="https://github.com/ReemAlsharabi/word-game" target="_blank" class="projGitHub"><img src="images/github.png" alt="github"></a></div>
-                            <p>Built a game that fetches data from an API based on the chosen difficulty level. And secured API keys using Nodejs.</p>
-                            <h2>React, Nodejs</h2>
-                        </div>
-                    <div class="proj">
-                            <div class = "projTxt"><h4>Movie Rating System</h4><a href="https://github.com/reemalsharabi/OOP" target="_blank" class="projGitHub"><img src="images/github.png" alt="github"></a></div>
-                            <p>Developed a system that provides information about movies as well as their cast and crew, the system allows users to create an account to review the movies, and it requires admin credentials</p>
-                            <h2>Java, Swing, MySQL</h2>
-                        </div>
-                        <div class="proj">
-                            <div class = "projTxt"><h4>Book Club Website</h4><a href="https://github.com/reemalsharabi/book-club" target="_blank" class="projGitHub"><img src="images/github.png" alt="github"></a></div>
-                            <p>Implemented a full stack, database-driven web application that requires admin credentials.</p>
-                            <h2>HTML, CSS, JS, PHP, SQL</h2>
-                        </div>
+            </section>
+        </div>
 
-                        <div class="proj">
-                            <div class = "projTxt"><h4>Numerical Methods</h4><a href="https://github.com/reemalsharabi/Numerical_Analysis" target="_blank" class="projGitHub"><img src="images/github.png" alt="github"></a></div>
-                            <p>Implemented some of the numerical solutions for non-linear equations.</p>
-                            <h2>MATLAB</h2>
+        <div id="projects" class="underlineNav">
+            <section>
+                <h3>Coding projects</h3>
+                <div class="project-container">
+                    <div class="project">
+                        <img src="images/wag.png" alt="Project 1">
+                        <a href="https://github.com/ReemAlsharabi/word-game" target="_blank" class="projGitHub"><img src="images/github.png" alt="github"></a>
+                        <div class="project-info">
+                            <h1>Word Association Game</h1>
                         </div>
+                        <p>A game that fetches data from an API based on the chosen difficulty level. Built with React and NodeJS.</p>
 
-                    
-                        <div class="proj">
-                            <div class = "projTxt"><h4>School Management System</h4><a href="https://github.com/reemalsharabi/cpp-school" target="_blank" class="projGitHub"><img src="images/github.png" alt="github"></a></div>
-                            <p>Developed a program to manage the data for a school with students and courses using objects from the different classes, based on a UML class diagram.</p>
-                            <h2>C++, Makefile</h2>
-                        </div>
-                    
-                       
-                </section>
-            </div >
-
-            <div  id="contact" class="underlineNav">
-                <section>
-                    <h3>Contact me</h3>
-                    <div class="communication">
-                        <form action="https://formsubmit.co/Reem.Alsharabi@outlook.com" method="POST">
-                            <div class="row">
-                              <div class="col-75">
-                                <input type="text" id="name" name="name" placeholder="Name" required>
-                              </div>
-                            </div>
-                            <div class="row">
-                              <div class="col-75">
-                                <input type="text" id="email" name="email" placeholder="Email" required>
-                              </div>
-                            </div>
-                            <div class="row">
-                              <div class="col-75">
-                                <textarea id="subject" name="subject" placeholder="Message.." style="height:200px" required></textarea>
-                              </div>
-                            </div>
-                            <div class="row">
-                              <input type="submit" value="Send">
-                            </div>
-                          </form>
-                          <br><br><br>
-                          <div class="social">
-                            <a href="https://github.com/reemalsharabi" target="_blank"><img src="images/github.png" alt="github"></a>
-                            <a href="https://www.linkedin.com/in/reem-alsharabi-5370851b6" target="_blank"><img src="images/linkedin.png" alt="linkedin"></a>
-                              <br><br>
-                              <p>Email address: Reem.Alsharabi@outlook.com</p>
-                        </div>
-                        
                     </div>
-                </section>
-            </div >
-    <div class="sign">Reem :3</div>
-</main>
+                    <div class="project">
+                        <img src="images/gs.png" alt="Project 2">
+                        <a href="https://github.com/ReemAlsharabi/orthonormalization-visualization" target="_blank" class="projGitHub"><img src="images/github.png" alt="github"></a>
+                        <div class="project-info">
+                            <h1>Orthonormalization Visualization</h1>
+                        </div>
+                        <p>Python program that uses the Plotly library to create an interactive 3D scatter plot that visualizes the relationship between input vectors and their orthonormal counterparts.</p>
+
+                    </div>
+                    <div class="project">
+                        <img src="images/gd.png" alt="Project 3">
+                        <a href="https://github.com/ReemAlsharabi/Gradient-Descent-Visualization" target="_blank" class="projGitHub"><img src="images/github.png" alt="github"></a>
+                        <div class="project-info">
+                            <h1>Gradient Descent Visualization</h1>
+                        </div>
+                        <p>Python program that uses the Plotly library to create a 3D surface plot of a two-dimensional function, f(x, y), and a 3D scatter plot of the optimization path of the gradient descent algorithm.</p>
+
+                    </div>
+
+
+                </div>
+
+                <a href="https://reemalsharabi.github.io/projects.html" class="more-button">More</a>
+
+            </section>
+        </div>
+
+        <div id="contact" class="underlineNav">
+            <section>
+                <h3>Contact me</h3>
+                <div class="communication">
+                    <form action="https://formsubmit.co/Reem.Alsharabi@outlook.com" method="POST">
+                        <div class="row">
+                            <div class="col-75">
+                                <input type="text" id="name" name="name" placeholder="Name" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-75">
+                                <input type="text" id="email" name="email" placeholder="Email" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-75">
+                                <textarea id="subject" name="subject" placeholder="Message.." style="height:200px" required></textarea>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <input type="submit" value="Send">
+                        </div>
+                    </form>
+                    <br><br><br>
+                    <div class="social">
+                        <a href="https://github.com/reemalsharabi" target="_blank"><img src="images/github.png" alt="github"></a>
+                        <a href="https://www.linkedin.com/in/reem-alsharabi-5370851b6" target="_blank"><img src="images/linkedin.png" alt="linkedin"></a>
+                        <br><br>
+                        <p>Email address: Reem.Alsharabi@outlook.com</p>
+                    </div>
+
+                </div>
+            </section>
+        </div>
+        <div class="sign">Reem :3</div>
+    </main>
 
     <script src="script/myScript.js"></script>
 </body>
