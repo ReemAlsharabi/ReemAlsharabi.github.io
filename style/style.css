@@ -213,7 +213,7 @@ section {
 }
 
 .projGitHub img {
-    max-width: 2.5em;
+    max-width: 3.5em;
     padding-left: 0.5em;
     margin-bottom: -0.35em;
 }
@@ -319,6 +319,7 @@ input[type=submit] {
     margin: 1.5em 1em 1.5em 1em;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
     .project .projGitHub {
@@ -355,7 +356,6 @@ input[type=submit] {
 
 .project img {
     width: 70%;
-    margin: auto;
 }
 
 #more {
@@ -434,6 +434,7 @@ input[type=submit] {
         margin: 1.5em 1em 1.5em 1em;
         display: flex;
         flex-direction: column;
+        align-items: center;
     }
 
     .project-container {
