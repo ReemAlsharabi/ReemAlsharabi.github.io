@@ -44,11 +44,11 @@ function projFunction() {
 
     if (dots.style.display === "none") {
         dots.style.display = "inline";
-        btn.innerHTML = "Show more";
+        btn.innerHTML = "More";
         more.style.display = "none";
     } else {
         dots.style.display = "none";
-        btn.innerHTML = "Show less";
+        btn.innerHTML = "Less";
         more.style.display = "flex";
         more.style.flexWrap = "wrap";
         more.style.alignItems = "flexstart";
