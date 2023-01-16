@@ -11,45 +11,53 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-html{
+html {
     scroll-behavior: smooth;
 }
+
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
-body{
+body {
     margin: 0em;
     padding: 0em;
 }
-h2{
+
+h2 {
     font-family: 'Nanum Gothic Coding', monospace, 'Roboto', sans-serif;
     font-size: 1rem;
 }
-h3{
+
+h3 {
     font-family: 'Nanum Gothic Coding', monospace;
     font-size: 2rem;
     font-weight: 100;
 }
-h4, .bioColumn h1{
+
+h4, h1 {
     font-family: 'Nanum Gothic Coding', monospace;
     font-size: 1.5rem;
     margin: 0.7em 0em 0.7em 0em;
     font-weight: 100;
 }
-p, span{
+
+p, span {
     font-family: 'Nanum Gothic Coding', monospace, 'Open Sans', sans-serif;
     font-size: 1.2rem;
     margin: 0em;
     line-height: 1.7em;
 }
-.comment{
+
+.comment {
     color: gray;
 }
-a{
+
+a {
     color: black;
 }
-header{
+
+header {
     position: fixed;
     background-color: #fff;
     z-index: 1;
@@ -59,24 +67,28 @@ header{
     height: 6em;
     box-shadow: 0 3px 1px -2px #dfdfdf;
 }
-main{
+
+main {
     flex-grow: 1;
     width: 100%;
     position: relative;
     top: 7em;
     background: #fff;
 }
-.logo{
+
+.logo {
     float: left;
 }
-.fName a{
+
+.fName a {
     font-family: 'Cedarville Cursive', cursive;
     margin-left: 1em;
     font-size: 2rem;
     text-decoration: none;
     color: black;
 }
-.lName a{
+
+.lName a {
     position: absolute;
     font-family: 'Roboto Condensed', sans-serif;
     text-transform: uppercase;
@@ -87,48 +99,54 @@ main{
     text-decoration: none;
     color: black;
 }
-.menu{
+
+.menu {
     overflow: hidden;
     float: right;
 }
 
-.menu a{
-    display: block;
-    float: left;
-    text-align: center;
-    padding: 3em 2em 0em 0em;
-    font-family: 'Lato', sans-serif;
-    font-size: 1rem;
-    text-decoration: none;
-    text-transform: uppercase;
-    color: black;
-    z-index: 1;
-}
-
-.menu a:hover{
-    text-decoration: underline;
-}
-.menu a.active {
-    text-decoration: underline;
-    transition: 0.3s;
+    .menu a {
+        display: block;
+        float: left;
+        text-align: center;
+        padding: 3em 2em 0em 0em;
+        font-family: 'Lato', sans-serif;
+        font-size: 1rem;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: black;
+        z-index: 1;
     }
 
+        .menu a:hover {
+            text-decoration: underline;
+        }
 
-.menu .icon {
-    display: none;
-    padding-top: 3em;
-  }
-  .social{
+        .menu a.active {
+            text-decoration: underline;
+            transition: 0.3s;
+        }
+
+
+    .menu .icon {
+        display: none;
+        padding-top: 3em;
+    }
+
+.social {
     align-items: center;
 }
-.social img{
-    max-width: 2.5em;
-    padding-left: 0.35em;
-}
-.social img:hover, .projGitHub img:hover, .communication a:hover, .tagline a:hover{
-    opacity: 0.7;
-}
-.content{
+
+    .social img {
+        max-width: 2.5em;
+        padding-left: 0.35em;
+    }
+
+        .social img:hover, .projGitHub img:hover, .communication a:hover, .tagline a:hover {
+            opacity: 0.7;
+        }
+
+.content {
     display: flex;
     align-content: flex-start;
     justify-content: center;
@@ -136,43 +154,48 @@ main{
     width: 100%;
 }
 
-.bioColumn{
+.bioColumn {
     width: 20%;
     padding-right: 3em;
     text-align: center;
 }
 
-.content img{  
+.content img {
     width: 100%;
     border-radius: 290px;
 }
 
-.tagline #str{
+.tagline #str {
     font-family: 'Nanum Gothic Coding', monospace, 'Roboto', sans-serif;
     font-size: 2rem;
     margin: 1em 1em 0.6em 0em;
     color: #000;
 }
-.tagline{
+
+.tagline {
     margin: .7em;
     width: 50%;
     text-align: left;
- }
- .tagline a{
-     font-family: 'Nanum Gothic Coding', monospace, 'Roboto', sans-serif;
-     font-size: 1.2rem;
-     color: black;
- }
- section{
+}
+
+    .tagline a {
+        font-family: 'Nanum Gothic Coding', monospace, 'Roboto', sans-serif;
+        font-size: 1.2rem;
+        color: black;
+    }
+
+section {
     padding: 5em 0em 5em 0em;
     width: 100%;
-  }
-  #skills{
-      background-color: #e9e9e9;
-      align-items: center;
-      text-align: center;
-      display: flex;
-  }
+}
+
+#skills {
+    background-color: #e9e9e9;
+    align-items: center;
+    text-align: center;
+    display: flex;
+}
+
 .row {
     display: flex;
     flex-direction: row;
@@ -181,36 +204,43 @@ main{
     align-items: center;
     margin: 0em 5em 0em 5em;
 }
-.element{
+
+.element {
     width: 100%;
     padding: 2em 0em 2em 0em;
 }
-.element img{
-    width: 20%;
-}
 
- #projects{
+    .element img {
+        width: 20%;
+    }
+
+#projects {
     text-align: center;
 }
-.proj{
+
+.proj {
     text-align: left;
     margin: 2em 0em 2em 12em;
 }
+
 .projTxt {
     display: flex;
     align-items: center;
     justify-content: flex-start;
     flex-direction: row;
 }
-.proj p{
+
+.proj p {
     max-width: 70%
 }
-.projGitHub img{
+
+.projGitHub img {
     max-width: 2.5em;
     padding-left: 0.5em;
     margin-bottom: -0.35em;
 }
-#contact{
+
+#contact {
     background-color: #e9e9e9;
     align-items: center;
     text-align: center;
@@ -225,144 +255,223 @@ main{
 }
 
 
-.mail{
+.mail {
     background-image: url("images/email.png");
 }
-.twitter{
+
+.twitter {
     background-image: url("images/twitter_contact.png");
 }
-.location{
+
+.location {
     background-image: url("images/location.png");
 }
 
 
-.sign{
+.sign {
     padding: 1em;
     font-family: 'Patrick Hand SC', cursive;
     text-align: center;
     font-size: 1.75em;
 }
 
-      input[type=text], select, textarea {
-        width: 100%;
-        padding: 12px;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-        resize: vertical;
-      }
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
 
-      input[type=submit] {
-        margin-top: 1em;
-        border-radius: 60px;
-        display: inline-block;
-        background-color: rgba(0, 0, 0, 0.829);
-        color: white;
-        font-size: 18px;
-        cursor: pointer;
-        box-shadow: 0 2px 5px 0 rgba(0,0,0,0.06),
-                  0 2px 10px 0 rgba(0,0,0,0.07);
-        -webkit-transition: all 300ms ease;
-        transition: all 300ms ease;
-        width: 25%;
-    }
-    
+input[type=submit] {
+    margin-top: 1em;
+    border-radius: 60px;
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.829);
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.06), 0 2px 10px 0 rgba(0,0,0,0.07);
+    -webkit-transition: all 300ms ease;
+    transition: all 300ms ease;
+    width: 25%;
+}
+
     input[type=submit]:hover {
         background-color: rgba(0, 0, 0, 0.567);
         transform: translateY(1px);
-        box-shadow: 0 1px 1px 0 rgba(0,0,0,0.10),
-                  0 1px 1px 0 rgba(0,0,0,0.09);
+        box-shadow: 0 1px 1px 0 rgba(0,0,0,0.10), 0 1px 1px 0 rgba(0,0,0,0.09);
     }
-      .container {
-        border-radius: 5px;
-        background-color: #f2f2f2;
-        padding: 20px;
-      }
-      
-      .col-75 {
-        width: 75%;
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+.col-75 {
+    width: 75%;
+    margin-top: 1em;
+}
+
+@media screen and (max-width: 660px) {
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .bioColumn {
+        width: 60%;
+        padding: 0em;
+    }
+
+    .tagline {
+        width: 90%;
+    }
+
+        .tagline #str, h3, h4, .bioColumn h1 {
+            font-size: 1.5rem;
+        }
+
+        p, span, .tagline a {
+            font-size: 1rem;
+        }
+
+    .social img {
+        width: 2.5em;
+        padding-right: 0.1em;
+    }
+
+    .menu a {
+        display: none;
+    }
+
+        .menu a.icon {
+            float: right;
+            display: block;
+            margin-right: 1em;
+        }
+
+    .logo {
+        position: absolute;
+        right: 50%;
+    }
+
+    .fName a {
+        margin: 0;
+        font-size: 1.9rem;
+    }
+
+    .lName a {
+        font-size: 1rem;
+        top: 3.8em;
+        left: 2em;
+    }
+
+    .row {
+        flex-direction: column;
+        margin: 0em 3em 0em 3em;
+    }
+
+    .element img {
+        width: 20%;
+    }
+
+    .proj {
+        text-align: left;
+        margin: 2em 0em 2em 2em;
+    }
+
+        .proj p {
+            max-width: 95%
+        }
+
+    .menu.responsive {
+        position: relative;
+    }
+
+        .menu.responsive .icon {
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+
+    .menu.responsive {
+        float: none;
+    }
+
+        .menu.responsive a {
+            float: none;
+            display: block;
+            text-align: center;
+            background-color: #fff;
+            padding: 2em 0em 2em 0em;
+        }
+
+    .col-75 {
+        width: 300%;
         margin-top: 1em;
     }
 
-    @media screen and (max-width: 660px) {
-        .content{
-            flex-direction: column;
-            align-items: center;
-            }
-            .bioColumn{  
-                width: 60%;
-                padding:0em;
-            }
-            .tagline{
-                width: 90%;
-            }
-            .tagline #str, h3, h4, .bioColumn h1{
-                font-size: 1.5rem;
-            }
-            p, span, .tagline a{
-                font-size: 1rem;
-            }
-            .social img{
-                width: 2.5em;
-                padding-right: 0.1em;
-            }
-    
-            .menu a{display: none;}
-            .menu a.icon {
-              float: right;
-              display: block;
-              margin-right: 1em;
-            }
-            .logo{
-                position: absolute;
-                right: 50%;
-            }
-            .fName a{
-                margin: 0;
-                font-size: 1.9rem;
-                    
-            }
-            .lName a{
-                
-                font-size: 1rem;
-                top: 3.8em;
-                left: 2em;
-            }
-            .row{
-                flex-direction: column;
-                margin: 0em 3em 0em 3em;
-            }
-            .element img{
-                width: 20%;
-            }
-            .proj{
-                text-align: left;
-                margin: 2em 0em 2em 2em;
-            }
-            .proj p{
-                max-width: 95%
-            }
-            .menu.responsive {position: relative;}
-            .menu.responsive .icon {
-              position: absolute;
-              right: 0;
-              top: 0;
-            }
-            .menu.responsive{
-                float: none;
-            }
-            .menu.responsive a {
-              float: none;
-              display: block;
-              text-align: center;
-              background-color: #fff;
-              padding: 2em 0em 2em 0em;
-            }
-            .col-75{
-                width: 300%;
-                margin-top: 1em;
-              }
-              input[type=submit] {
+    input[type=submit] {
+        width: 75%;
+    }
 
-              width: 75%;
-              }
-          }
+    .project {
+        width: 100%;
+        margin: 0;
+    }
+
+    .more-button {
+        position: static;
+        text-align: center;
+        margin-top: 1%;
+    }
+}
+
+.project-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.project {
+    width: 25%;
+    margin: 1%;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-info {
+    width: 100%;
+}
+
+.more-button {
+    margin-top: 1em;
+    border-radius: 60px;
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.829);
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.06), 0 2px 10px 0 rgba(0,0,0,0.07);
+    -webkit-transition: all 300ms ease;
+    transition: all 300ms ease;
+    width: 8.5%;
+    text-decoration: none;
+    font-family: sans-serif;
+    border: 1px solid #ccc;
+    resize: vertical;
+}
+
+    .more-button:hover {
+        background-color: rgba(0, 0, 0, 0.567);
+        transform: translateY(1px);
+        box-shadow: 0 1px 1px 0 rgba(0,0,0,0.10), 0 1px 1px 0 rgba(0,0,0,0.09);
+    }
+
+.project img {
+    width: 70%;
+    margin: auto;
+}
