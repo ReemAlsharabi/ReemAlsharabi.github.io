@@ -250,6 +250,8 @@ section {
     align-items: center;
     text-align: left;
     padding: 1em;
+    margin: auto;
+    width: 90%;
 }
 
     .semester ul li {
