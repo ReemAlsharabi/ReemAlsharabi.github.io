@@ -250,8 +250,6 @@ section {
     align-items: center;
     text-align: left;
     padding: 1em;
-    margin: auto;
-    width: 90%;
 }
 
     .semester ul li {
@@ -492,7 +490,10 @@ input[type=submit] {
         justify-content: center;
         align-items: flex-start;
     }
-
+    .semester {
+        margin: auto;
+        width: 90%;
+    }
     .col-75 {
         width: 235%;
     }
