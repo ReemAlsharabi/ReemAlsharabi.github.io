@@ -1,5 +1,5 @@
 # Personal Website
-This is the source code for my personal website, where I showcase my portfolio, blog about my interests and thoughts, and provide a way for others to contact me.
+This is the source code for my personal website, where I showcase my portfolio, blog about my interests, and thoughts, and provide a way for others to contact me.
 
 ## Built With
  * HTML
