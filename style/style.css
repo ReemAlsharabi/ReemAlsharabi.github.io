@@ -240,8 +240,9 @@ section {
 .year {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: left;
     align-items: flex-start;
+    margin-left: 3em;
 }
 
 .semester {
@@ -249,14 +250,14 @@ section {
     flex-direction: column;
     align-items: center;
     text-align: left;
-    padding: 1em;
+    width: 30em;
 }
 
     .semester ul li {
         font-family: 'Nanum Gothic Coding', monospace, 'Open Sans', sans-serif;
         font-size: 1rem;
         margin: 0em;
-        line-height: 1.7em;
+        line-height: 1.545em;
         list-style: circle;
     }
 
