@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description" CONTENT="Reem Alsharabi Computer Science student at Effat University" />
+    <meta name="google-site-verification" content="VG0rndKOOja4zWGQ3jv7I0H5-ulv57H0TLfgSytMMHU" />
+    <title>Reem Alsharabi - QR generator</title>
+    <link rel="icon" href="images/icon.png" type="image/x-icon">
+    <link href="style/style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1 class="fName"><a href="index.html">Reem</a></h1>
+            <h1 class="lName"><a href="index.html">Alsharabi</a></h1>
+        </div>
+        <div id="myMenu" class="menu">
+            <a href="index.html" class="home">home</a>
+            <a href="#contact" class="contact">contact me</a>
+            <a href="https://reemalsharabi.github.io/docs/resume.pdf" target="_blank">resume</a>
+
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+        </div>
+    </header>
+
+    <main class="qr">
+
+        <form>
+            <label for="link-input">Enter a link:</label>
+            <input id="link-input" type="url" required>
+            <button type="submit" id="generate-btn">Generate QR code</button>
+        </form>
+        <canvas id="qr-canvas"></canvas>
+        <button id="save-btn">Save Image</button>
+
+        <div id="contact" class="underlineNav">
+            <section>
+                <div class="social">
+                    <br>
+                    <p>Email address: Reem.Alsharabi@outlook.com</p>
+                    <br>
+                    <a href="https://github.com/reemalsharabi" target="_blank"><img src="images/github.png" alt="github"></a>
+                    <a href="https://www.linkedin.com/in/reem-alsharabi-5370851b6" target="_blank"><img src="images/linkedin.png" alt="linkedin"></a>
+
+
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/qrious"></script>
+    <script>
+        const form = document.querySelector('form');
+        const linkInput = document.getElementById('link-input');
+        const generateBtn = document.getElementById('generate-btn');
+        const canvas = document.getElementById('qr-canvas');
+        const saveBtn = document.getElementById('save-btn');
+
+        form.addEventListener('submit', (event) => {
+            event.preventDefault();
+
+            // create a QRious instance
+            const qr = new QRious({
+                element: canvas,
+                size: 300,
+                value: linkInput.value
+            });
+
+            // show the save button
+            saveBtn.style.display = 'block';
+        });
+
+        saveBtn.addEventListener('click', () => {
+            const link = document.createElement('a');
+            link.download = 'qr-code.png';
+            link.href = canvas.toDataURL('image/png');
+            link.click();
+        });
+    </script>
+
+</body>
+</html>

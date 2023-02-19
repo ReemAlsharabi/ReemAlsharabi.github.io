@@ -142,7 +142,7 @@ main {
         padding-left: 0.35em;
     }
 
-        .social img:hover, .projGitHub img:hover, .communication a:hover, .tagline a:hover {
+        .social img:hover, .projGitHub img:hover, .communication a:hover, .tagline a:hover{
             opacity: 0.7;
         }
 
@@ -178,7 +178,7 @@ main {
     text-align: left;
 }
 
-    .tagline a {
+    .tagline a, .demo {
         font-family: 'Nanum Gothic Coding', monospace, 'Roboto', sans-serif;
         font-size: 1.2rem;
         color: black;
@@ -519,3 +519,62 @@ input[type=submit] {
         padding: 0.6em;
         margin: 0.5em;
     }
+
+.qr form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.qr label {
+    margin-bottom: 10px;
+}
+
+.qr input {
+    margin-bottom: 20px;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 300px;
+}
+
+.qr button {
+    padding: 10px 20px;
+    background-color: #829c9c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.2s;
+    margin-bottom: 5em;
+}
+
+    .qr button:hover {
+        background-color: #596a6a;
+    }
+
+.qr canvas {
+    margin: auto;
+    max-width: 300px;
+    height: 250px;
+    display: block;
+    padding-bottom: 1em;
+}
+
+
+#contact section {
+    padding: 0em 0em 0em 0em;
+}
+
+#save-btn {
+    display: none;
+    margin: auto;
+    margin-bottom: 3em;
+}
+
+.demo a{
+    font-weight: bold;
+}
