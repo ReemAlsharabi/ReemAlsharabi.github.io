@@ -1,11 +1,11 @@
 {
   "ExpandedNodes": [
     "",
+    "\\blog",
     "\\docs",
     "\\images",
-    "\\script",
-    "\\style"
+    "\\script"
   ],
-  "SelectedNode": "\\qr_generator.html",
+  "SelectedNode": "\\blog\\ugrf.html",
   "PreviewInSolutionExplorer": false
 }
