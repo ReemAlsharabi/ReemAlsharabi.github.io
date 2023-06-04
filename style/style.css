@@ -750,3 +750,7 @@ a .grid-item:hover {
     flex-wrap: nowrap;
     text-align: center;
 }
+.blog .grid-item img {
+    display: block;
+    margin: 0 auto;
+}
