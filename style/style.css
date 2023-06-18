@@ -408,12 +408,207 @@ input[type=submit] {
         margin: 0;
         font-size: 16px;
     }
+    
+.technology {
+    display: flex;
+    align-content: center;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
 
+    .technology h2 {
+        background: #d7d7d7;
+        font-family: 'Roboto Condensed';
+        font-size: 0.9em;
+        border-radius: 50px;
+        padding: 0.6em;
+        margin: 0.5em;
+    }
+
+.qr form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.qr label {
+    margin-bottom: 10px;
+}
+
+.qr input {
+    margin-bottom: 20px;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 300px;
+}
+
+.qr button {
+    padding: 10px 20px;
+    background-color: #829c9c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.2s;
+    margin-bottom: 5em;
+}
+
+    .qr button:hover {
+        background-color: #596a6a;
+    }
+
+.qr canvas {
+    margin: auto;
+    max-width: 300px;
+    height: 250px;
+    display: block;
+    padding-bottom: 1em;
+}
+
+
+#contact section {
+    padding: 0em 0em 0em 0em;
+}
+
+#save-btn {
+    display: none;
+    margin: auto;
+    margin-bottom: 3em;
+}
+
+.demo a {
+    font-weight: bold;
+}
+
+
+#coursework {
+    margin: 0 auto;
+    width: 500px;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+/* Year and semester headings */
+
+.year {
+    margin-top: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+/* Course list */
+
+.semester ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+    .semester ul li {
+        margin-bottom: 5px;
+        font-size: 1em;
+    }
+
+.blog {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: flex-start;
+}
+#blog {
+    text-align: center;
+}
+.grid-item {
+    border: none;
+    padding: 5px;
+    margin: 10px;
+}
+
+    .grid-item img {
+        width: 20em;
+        height: 15em;
+        object-fit: cover;
+    }
+.blog-album{
+    text-align: center;
+}
+.blog-album .grid-item img {
+    width: 20em;
+    height: 26em;
+    object-fit: cover;
+}
+
+.grid-item h3 {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+    .grid-item p {
+        font-size: 1em;
+    }
+
+.post h3 {
+    align-items: center;
+    text-align: center;
+}
+
+.post ul li {
+    font-family: 'Nanum Gothic Coding', monospace;
+    font-size: 1rem;
+    margin: 0.7em 0em 0.7em 0em;
+    line-height: 1.5em;
+}
+
+.post {
+    max-width: 60%;
+    margin: 0 auto;
+}
+
+    .post p {
+        margin: 0em 0em 1em 0em;
+    }
+
+    .post h4 {
+        text-align: center;
+        margin-top: 3em;
+    }
+
+    .post .grid-item img {
+        width: 70%;
+    }
+
+.blog a {
+    text-decoration: none;
+}
+
+a .grid-item:hover {
+    opacity: 0.8;
+}
+
+.blog .grid-item img {
+    display: block;
+    margin: 0 auto;
+}
 
 
 
 
 @media screen and (max-width: 660px) {
+    .blog {
+        width: 50%;
+    }
+    .blog-album .grid-item img {
+        width: 100%;
+        height: 14.8em;
+        object-fit: cover;
+    }
     .qr button {
         margin-bottom: 5em;
     }
@@ -573,184 +768,8 @@ input[type=submit] {
         font-size: 1rem;
         margin: auto;
     }
-}
-
-.technology {
-    display: flex;
-    align-content: center;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-
-    .technology h2 {
-        background: #d7d7d7;
-        font-family: 'Roboto Condensed';
-        font-size: 0.9em;
-        border-radius: 50px;
-        padding: 0.6em;
-        margin: 0.5em;
+    .post {
+        max-width: 85%;
+        margin: 0 auto;
     }
-
-.qr form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 50px;
-}
-
-.qr label {
-    margin-bottom: 10px;
-}
-
-.qr input {
-    margin-bottom: 20px;
-    padding: 5px;
-    border-radius: 5px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 300px;
-}
-
-.qr button {
-    padding: 10px 20px;
-    background-color: #829c9c;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.2s;
-    margin-bottom: 5em;
-}
-
-    .qr button:hover {
-        background-color: #596a6a;
-    }
-
-.qr canvas {
-    margin: auto;
-    max-width: 300px;
-    height: 250px;
-    display: block;
-    padding-bottom: 1em;
-}
-
-
-#contact section {
-    padding: 0em 0em 0em 0em;
-}
-
-#save-btn {
-    display: none;
-    margin: auto;
-    margin-bottom: 3em;
-}
-
-.demo a {
-    font-weight: bold;
-}
-
-
-#coursework {
-    margin: 0 auto;
-    width: 500px;
-    border: 1px solid #ccc;
-    padding: 10px;
-}
-
-/* Year and semester headings */
-
-.year {
-    margin-top: 10px;
-    font-size: 1.2em;
-    font-weight: bold;
-}
-
-/* Course list */
-
-.semester ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-    .semester ul li {
-        margin-bottom: 5px;
-        font-size: 1em;
-    }
-
-#blog {
-    display: grid;
-    grid-template-columns: repeat(3, 60%);
-    margin: 0 auto;
-    width: 500px;
-    padding: 10px;
-}
-
-.grid-item {
-    border: none;
-    padding: 5px;
-    margin: 10px;
-}
-
-    .grid-item img {
-        width: 100%;
-    }
-
-    .grid-item h3 {
-        font-size: 1.2em;
-        font-weight: bold;
-    }
-
-    .grid-item p {
-        font-size: 1em;
-    }
-
-.post h3 {
-    align-items: center;
-    text-align: center;
-}
-
-.post ul li {
-    font-family: 'Nanum Gothic Coding', monospace;
-    font-size: 1rem;
-    margin: 0.7em 0em 0.7em 0em;
-    line-height: 1.5em;
-}
-
-.post {
-    max-width: 60%;
-    margin: 0 auto;
-}
-
-    .post p {
-        margin: 0em 0em 1em 0em;
-    }
-
-    .post h4 {
-        text-align: center;
-        margin-top: 3em;
-    }
-
-    .post .grid-item img {
-        width: 70%;
-    }
-
-.blog a {
-    text-decoration: none;
-}
-
-a .grid-item:hover {
-    opacity: 0.8;
-}
-
-#blog {
-    display: flex;
-    flex-wrap: nowrap;
-    text-align: center;
-}
-.blog .grid-item img {
-    display: block;
-    margin: 0 auto;
 }
