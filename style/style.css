@@ -515,6 +515,7 @@ input[type=submit] {
     }
 
 .blog {
+    text-align: center;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -602,8 +603,14 @@ a .grid-item:hover {
 
 @media screen and (max-width: 660px) {
     .blog {
-        width: 50%;
+        display: block;
+        float: none;
+        display: block;
+        text-align: center;
+        background-color: #fff;
+        padding: 2em 0em 2em 0em;
     }
+
     .blog-album .grid-item img {
         width: 100%;
         height: 14.8em;
