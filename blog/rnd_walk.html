@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description" CONTENT="Reem Alsharabi Computer Science student at Effat University" />
+    <meta name="google-site-verification" content="VG0rndKOOja4zWGQ3jv7I0H5-ulv57H0TLfgSytMMHU" />
+    <title>Reem Alsharabi</title>
+    <link rel="icon" href="../images/icon.png" type="image/x-icon">
+    <link href="../style/style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1 class="fName"><a href="https://reemalsharabi.github.io/index.html">Reem</a></h1>
+            <h1 class="lName"><a href="https://reemalsharabi.github.io/index.html">Alsharabi</a></h1>
+        </div>
+        <div id="myMenu" class="menu">
+            <a href="blog.html" class="home">home</a>
+            <!--<a href="https://reemalsharabi.github.io/blog/blog.html" class="blog">blog</a>-->
+
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+        </div>
+    </header>
+
+    <main>
+        <section id="">
+            <div class="post">
+                <h3>
+                    The Random Walk Problem
+                </h3>
+
+                <p>
+                    Imagine taking a sequence of steps, each determined by the flip of a coin. 
+                    This simple idea lies at the heart of the intriguing random walk problem. 
+                    It's a bit like a puzzle piece that fits into many different pictures. 
+                    From understanding how stock prices behave to exploring how tiny particles move, the random walk has proven to be a versatile tool for studying uncertainty and randomness.
+
+                    </p>
+
+               <p>
+                   Let's delve into solving it statistically and even simulate it using Python
+                   </p>
+
+                <p style="font-weight:bold;">
+                    Q1: A walker starts at 0 on the x-axis and at each time unit moves 1 step to the right with probability 3/4 or 1 step to the left with probability 1/4. Estimate the probability that, after 100 steps, the x-coordinate of the walker is more than 50
+                    </p>
+
+                <p>
+                    We will solve the question using the normal distribution. Because, as the Central Limit Theorem states, the sum of a large number of independent and identically distributed random variables will be approximately normally distributed.
+                 <br/>
+                    <br />
+                    let w be our random variable
+                    <br/>
+                    step to the right = 1
+                    <br/>
+                    step to the left = -1
+                    </p>
+                <img src="../images/q1_sol.jpg" style="width: 60%;">
+                <img src="../images/q1_dist.png" style="width: 40%;">
+                <br/>
+                <p style="font-weight:bold;">
+                    Q2: A walker starts at 0 on the x-axis and at each time unit moves 1 step to the right or 1 step to the left with probability 1/2. Estimate the probability that, after 100 steps, the walker is more than 10 steps from the starting position.
+                    </p>
+
+                <p>
+                    let w be our random variable
+                    <br/>
+                    step to the right = 1
+                    <br/>
+                    step to the left = -1
+                    </p>
+                <img src="../images/q2_sol.jpg" style="width: 65%;">
+                <img src="../images/q2_dist.png" style="width: 40%;">
+                <br/><br/>
+                <p style="font-weight:bold;">Python simulation</p>
+
+                <pre>
+<code>
+import random
+import matplotlib.pyplot as plt
+
+def simulate_walker(steps, simulations):
+    count = 0
+    positions = []
+    for _ in range(simulations):
+        position = 0
+        positions.append([position])
+        for _ in range(steps):
+            move = random.choice([-1, 1])
+            position += move
+            positions[-1].append(position)
+        if abs(position) > 10:
+            count += 1
+    return count / simulations, positions
+
+steps = 100
+simulations = 10
+probability, positions = simulate_walker(steps, simulations)
+print(f"Estimated probability: {probability}")
+
+plt.figure(figsize=(10, 6))
+for i, pos_list in enumerate(positions):
+    plt.plot(pos_list, label=f"Simulation {i+1}")
+
+plt.axhline(y=0, color='black', linestyle='--', label='Starting Position')
+plt.xlabel("Steps")
+plt.ylabel("Position")
+plt.title("Random Walk Simulations")
+plt.legend()
+plt.grid()
+plt.show()
+
+Output:
+Estimated probability: 0.3
+<img src="../images/q2_sim.png"/>
+    </code>
+
+    </pre>
+</div>
+        </section>
+
+
+        <div id="contact" class="underlineNav">
+            <section>
+
+
+                <div class="social">
+                    <br>
+                    <p>Email address: reualsharabi (@) effat.edu.sa</p>
+                    <a href="https://github.com/reemalsharabi" target="_blank"><img src="../images/github.png" alt="github"></a>
+                    <a href="https://twitter.com/r33m_sh" target="_blank"><img src="../images/twitter.jpg" alt=" twitter"></a>
+                    <a href="https://www.linkedin.com/in/reem-alsharabi-5370851b6" target="_blank"><img src="../images/linkedin.png" alt="linkedin"></a>
+                    <a href="mailto:reualsharabi@effat.edu.sa" target="_blank"><img src="../images/mail.png" alt="mail"></a>
+                    <br>
+                    <br>
+
+
+                </div>
+
+        </div>
+        </section>
+        </div>
+        <!--<div class="sign">Reem :3</div>-->
+    </main>
+
+    <script src="script/myScript.js"></script>
+</body>
+</html>

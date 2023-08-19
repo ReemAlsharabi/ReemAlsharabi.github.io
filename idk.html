@@ -88,3 +88,77 @@
 
 -->
 
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      font-family: monospace;
+      background-color: #1e1e1e;
+      color: #d0d0d0;
+      padding: 20px;
+      position: relative;
+    }
+    
+    pre {
+      background-color: #2e2e2e;
+      padding: 10px;
+      border-radius: 5px;
+      overflow-x: auto;
+    }
+
+    .copy-button {
+      background-color: #0074d9;
+      border: none;
+      color: white;
+      padding: 5px 10px;
+      border-radius: 5px;
+      cursor: pointer;
+      position: absolute;
+      top: 0;
+      right: 0; /* Adjusted to position the button at the top-right corner */
+    }
+
+    .copy-button.clicked {
+      background-color: gray;
+    }
+
+    .checkmark {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <button class="copy-button" onclick="copyToClipboard(this)">
+    Copy
+    <span class="checkmark">&#10003;</span>
+  </button>
+  <pre><code>
+!pip install torch&gt;=1.7.0 torchvision&gt;=0.9.1 omegaconf&gt;=2.0.6 onnx&gt;=1.7.0 pandas&gt;=1.2.2 pyyaml&gt;=5.3.1 tensorboard future scipy&gt;=1.6.0 wget
+!pip install --no-deps crypten
+  </code></pre>
+
+  <script>
+    function copyToClipboard(button) {
+      var codeBlock = document.querySelector('pre code');
+      var textArea = document.createElement('textarea');
+      textArea.value = codeBlock.innerText;
+      document.body.appendChild(textArea);
+      textArea.select();
+      document.execCommand('copy');
+      document.body.removeChild(textArea);
+
+      button.classList.add('clicked');
+      button.textContent = 'Copied';
+      setTimeout(function() {
+        button.classList.remove('clicked');
+        button.textContent = 'Copy';
+      }, 1500);
+    }
+  </script>
+</body>
+</html>

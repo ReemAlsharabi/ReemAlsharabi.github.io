@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description" CONTENT="Reem Alsharabi Computer Science student at Effat University" />
+    <meta name="google-site-verification" content="VG0rndKOOja4zWGQ3jv7I0H5-ulv57H0TLfgSytMMHU" />
+    <title>Reem Alsharabi</title>
+    <link rel="icon" href="../images/icon.png" type="image/x-icon">
+    <link href="../style/style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1 class="fName"><a href="https://reemalsharabi.github.io/index.html">Reem</a></h1>
+            <h1 class="lName"><a href="https://reemalsharabi.github.io/index.html">Alsharabi</a></h1>
+        </div>
+        <div id="myMenu" class="menu">
+            <a href="blog.html" class="home">home</a>
+            <!--<a href="https://reemalsharabi.github.io/blog/blog.html" class="blog">blog</a>-->
+
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+        </div>
+    </header>
+
+    <main>
+        <section id="">
+            <div class="post">
+                <h3>
+                    Homomorphic Encryption: The Secret Sauce Behind Neural Network Training on Encrypted Data
+                </h3>
+
+                <p>
+                    In the world of deep learning, where data security and neural networks intersect, encryption stands as a beacon of trust. The question that persists is: How can neural networks learn from encrypted data?
+                </p>
+                <p>
+                    At the heart of encrypted deep learning lies homomorphic encryption. Which is an ancryption method that allows computations to be performed on encrypted data without the need for decryption, preserving data privacy.
+                    In the context of neural networks, homomorphic encryption allows training to occur on encrypted data. This means that even the machine learning practitioner doesn't have access to the raw data, reducing the risk of potential breaches.
+                </p>
+
+                <p>
+                    Homomorphic encryption is designed to preserve the underlying mathematical structure of the data while obscuring its actual values (<a href="https://en.wikipedia.org/wiki/Homomorphism#:~:text=In%20algebra%2C%20a%20homomorphism%20is,form%22%20or%20%22shape%22." target="_blank">homomorphisms</a>). In other words, the encryption process ensures that the encrypted data retains the same relationships and patterns as the original data, even though the values themselves are transformed in a way that makes them unintelligible without proper decryption.
+                </p>
+
+                <h1>
+                    From Cipher to Canvas
+                </h1>
+                <p>
+                    Let's visualize an encrypted tensor to further understand the process.
+                </p>
+
+
+                <p>
+                    We'll use  CrypTen. Which is a framework developed by Facebook research, designed to enable encrypted tensor operations within the PyTorch ecosystem.                </p>
+
+                <p>
+                    The following code encrypts a number of samples from MNIST dataset.
+                </p>
+                <p class="subtitle">First, let's install Crypten (don't pip install it directly because you'll get <a href="https://github.com/facebookresearch/CrypTen/issues/466" target="_blank" style="text-decoration: underline; color: #3c007b;">this error</a>)</p>
+
+                <pre>
+                    <code>
+    !pip install torch>=1.7.0 torchvision>=0.9.1 omegaconf>=2.0.6 onnx>=1.7.0 pandas>=1.2.2 pyyaml>=5.3.1 tensorboard future scipy>=1.6.0
+    !pip install --no-deps crypten
+                    </code>
+</pre>
+                <p class="subtitle">
+                    Setup
+                </p>
+                <pre>
+                    <code>
+    import crypten
+    import torch
+    import torchvision
+    import matplotlib.pyplot as plt
+    import numpy as np
+
+    %matplotlib inline
+
+    crypten.init()
+    torch.set_num_threads(1)
+                    </code>
+</pre>
+                <p class="subtitle">
+                    Load the data and get a sample of it 
+                </p>
+                <pre>
+                    
+                    <code>
+    data = torchvision.datasets.MNIST(root='/tmp/data', train=True, transform=torchvision.transforms.ToTensor(), download=True)
+
+    def take_samples(data, n_samples=1000):
+        """Returns images and labels based on sample size"""
+        images, labels = [], []
+        for i, d in enumerate(data):
+        if i == n_samples:
+        break
+        image, label = d
+        images.append(image)
+        label_one_hot = torch.nn.functional.one_hot(torch.tensor(label), 10)
+        labels.append(label_one_hot)
+
+        images = torch.cat(images)
+        labels = torch.stack(labels)
+        return images, labels
+
+    images, labels = take_samples(data_train, n_samples=100)
+    print(images.shape)
+    print(labels.shape)
+                    
+    Output:
+    torch.Size([100, 28, 28])
+    torch.Size([100, 10])
+</code>
+                </pre>
+                <p class="subtitle">
+                    Now, let's fetch some samples and encrypt them using CrypTen's cryptensor function.
+                </p>
+                <pre>
+                <code>
+    images_enc = crypten.cryptensor(images)
+    labels_enc = crypten.cryptensor(labels)
+                    </code>
+                    </pre>
+               
+                <p class="subtitle">
+                    At this point, our images are encrypted. Though they're invisible to the human eye, they're fully available for computations. Now comes the magical part. We'll take an encrypted image and visualize it.
+                </p>
+                <pre>
+                    <code>
+    image_data = np.array(images_enc[0]._tensor.share)
+    plt.imshow(image_data, cmap='gray')
+    plt.axis('off')
+    plt.show()
+                    
+    Output:
+        <img src="../images/vis_enc.png" />
+    </code>
+</pre>
+
+                <p class="subtitle">
+                    Get the decrypted label
+                </p>
+<pre>
+    <code>
+    labels_enc[0].get_plain_text()
+
+    Output:
+    tensor([0., 0., 0., 0., 0., 1., 0., 0., 0., 0.])
+    </code>
+</pre>
+
+<p>
+
+    Voila! We've just visualized an encrypted image. It may seem like an ordinary grayscale image, but remember, this data is encrypted, its visual representation is maintained, and the underlying mathematical structure is preserved. 
+    
+</p>
+                <p>
+    So, to answer the initial question: Neural Networks can learn from encrypted data because homomorphic encryption retains the underlying mathematical structure of the data while obscuring its actual values.
+    However, not all encryption techniques are the same. Most traditional methods, such as symmetric and asymmetric encryption, do not retain the visual representation of data like homomorphic encryption does. <br />When data is encrypted using these methods, the output appears random and bears no resemblance to the original data because these methods alter the content of the data in a way that does not preserve the original relationships between pixels.
+    <br />
+    Additionally, it's important to note that these traditional encryption techniques often require the use of relatively small encryption keys when used in encrypted training, which can impact the overall security of the encrypted data.
+    <br />
+    While symmetric and asymmetric encryption methods are effective in many scenarios, they may not be suitable for applications where retaining the visual characteristics of the data is essential.
+<br />
+    (In the context of encryption, a "key" refers to a piece of information that is used in conjunction with an encryption algorithm to transform plaintext into ciphertext, and vice versa for decryption.)
+
+</p>
+
+
+</div>
+        </section>
+
+
+        <div id="contact" class="underlineNav">
+            <section>
+
+
+                <div class="social">
+                    <br>
+                    <p>Email address: reualsharabi (@) effat.edu.sa</p>
+                    <a href="https://github.com/reemalsharabi" target="_blank"><img src="../images/github.png" alt="github"></a>
+                    <a href="https://twitter.com/r33m_sh" target="_blank"><img src="../images/twitter.jpg" alt=" twitter"></a>
+                    <a href="https://www.linkedin.com/in/reem-alsharabi-5370851b6" target="_blank"><img src="../images/linkedin.png" alt="linkedin"></a>
+                    <a href="mailto:reualsharabi@effat.edu.sa" target="_blank"><img src="../images/mail.png" alt="mail"></a>
+                    <br>
+                    <br>
+
+
+                </div>
+
+        </div>
+        </section>
+        </div>
+        <!--<div class="sign">Reem :3</div>-->
+    </main>
+
+    <script src="script/myScript.js"></script>
+</body>
+</html>

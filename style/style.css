@@ -781,3 +781,7 @@ a .grid-item:hover {
         margin: 0 auto;
     }
 }
+
+.subtitle {
+    color: #3c007b;
+}
