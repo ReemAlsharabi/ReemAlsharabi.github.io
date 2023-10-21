@@ -1,5 +1,5 @@
 //fun1
-var string = "Biography";
+var string = "Reem Alsharabi";
 var str = string.split("");
 var el = document.getElementById('str');
 (function animate() {
@@ -24,7 +24,7 @@ window.onscroll = () => {
 
     sections.forEach((section) => {
         const sectionTop = section.offsetTop;
-        if (window.pageYOffset >= sectionTop - 60) {
+        if (window.pageYOffset >= sectionTop - 50) {
             current = section.getAttribute("id");
         }
     });

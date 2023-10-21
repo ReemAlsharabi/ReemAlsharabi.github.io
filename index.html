@@ -12,17 +12,14 @@
 </head>
 <body>
     <header>
-        <div class="logo">
-            <h1 class="fName"><a href="index.html">Reem</a></h1>
-            <h1 class="lName"><a href="index.html">Alsharabi</a></h1>
-        </div>
         <div id="myMenu" class="menu">
             <a href="#home" class="home">about</a>
+            <a href="#experience" class="experience">experience</a>
             <a href="#projects" class="projects">projects</a>
             <a href="#highlights" class="highlights">highlights</a>
             <a href="blog/blog.html" class="blog">blog</a>
-            <!--<a href="#contact" class="contact">contact me</a>
-            <a href="https://reemalsharabi.github.io/docs/resume.pdf" target="_blank">resume</a>-->
+            <a href="https://reemalsharabi.github.io/docs/Reem_Alsharabi_resume.pdf" target="_blank">resume</a>
+            <!--<a href="#contact" class="contact">contact me</a>-->
 
             <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
         </div>
@@ -30,241 +27,103 @@
     <main>
         <section id="home" class="underlineNav">
             <div class="content">
-                <div class="bioColumn">
-                    <img src="images/ugrf.png" alt="img" >
-                    <h1>Reem Alsharabi</h1>
+
+
+                <div class="tagline">
+                    <div id="str"></div>
                     <div class="social">
                         <a href="https://github.com/reemalsharabi" target="_blank"><img src="images/github.png" alt="github"></a>
                         <a href="https://twitter.com/r33m_sh" target="_blank"><img src="images/twitter.jpg" alt=" twitter"></a>
                         <a href="https://www.linkedin.com/in/reem-alsharabi-5370851b6" target="_blank"><img src="images/linkedin.png" alt="linkedin"></a>
                         <a href="mailto:reualsharabi@effat.edu.sa" target="_blank"><img src="images/mail.png" alt="mail"></a>
                     </div>
-                </div>
-
-                <div class="tagline">
-                    <div id="str"></div>
-                    <span>
-                        I'm a Computer Science senior at <a href="https://www.effatuniversity.edu.sa" target="_blank">Effat University</a>
-                        with a concentration in Artificial Intelligence. I'm the Programming Club leader, a technical assistant in
-                        <a href="https://gdsc.community.dev/effat-university/" target="_blank">GDSC</a> core team,
-                        and an ambassador of <a href="https://developers.google.com/womentechmakers" target="_blank">Women Techmakers</a>.
-                        <br /><br />
-                        <!--Here is my <a href="https://reemalsharabi.github.io/coursework.html" target="_blank">course work</a>.-->
-
-                    </span>
                     <p>
-                        <h2>
-                            Education
-                        </h2>
-                    <p>BSc in computer science at Effat university, Aug 2020 - Dec 2023 (expected)</p>
+                        Hi there! I'm a Computer Science undergraduate at Effat University.
+                        My research interests focus on trustworthy machine learning. Specifically, I work on:
                     </p>
-                    <p>
-                        <h2>
-                            Experience
-                        </h2>
-                    <p>SDAIA-KAUST AI intern @ KAUST - Thuwal</p>
-                    <p>Robotics and AI Engineering Intern @ Smart Methods - Jeddah</p>
-                    </p>
+                    <ul>
+                        <li>Using encrypted training as an adversarial defense method for neural networks.</li>
+                        <li>Optimizing communication between parties in distributed learning settings to reduce bottlenecks.</li>
+                        <li>Developing regression models capable of out-of-distribution predictions with limited in-distribution data.</li>
+                        <li>Exploring hardware acceleration for homomorphic encryption and techniques for fitting long encrypted tensors onto GPUs.</li>
+                    </ul>
                 </div>
 
             </div>
         </section>
 
+        <section id="experience" class="underlineNav">
+            <h3>Experience</h3>
 
-        <div id="projects" class="underlineNav">
-            <section>
-                <h3>Projects</h3>
-
-                <div class="project-container">
-
-
-                    <div class="project">
-                        <img src="images/rob_e.png" alt="Project 1">
-                        <a href="https://github.com/ReemAlsharabi/CryptoRobustTraining/blob/main/code/crypten_mnist_fgsm.ipynb" target="_blank" class="projGitHub"><img src="images/github.png" alt="github"></a>
-                        <div class="project-info">
-                            <h1>Robust NNs</h1>
-                        </div>
-                        <p>Employed encrypted training techniques to increase NNs robustness against Fast Gradient Sign Method (FGSM) attacks, enhancing their resilience on the MNIST dataset.</p>
-                        <div class="technology">
-                            <h2>Pytorch</h2>
-                            <h2>Crypten</h2>
-                        </div>
+            <div class="tagline">
+                <div class="largedetails">
+                    <div class="leftdetails">
+                        <h5>KAUST AI Intern</h5>
+                        <p>King Abdullah University of Science and Technology (KAUST)</p>
+                        <p>July 2023 – August 2023</p>
                     </div>
-
-                    <div class="project">
-                        <img src="images/GTSRB.png" alt="Project 2">
-                        <a href="https://github.com/ReemAlsharabi/GTSRB-CNN" target="_blank" class="projGitHub"><img src="images/github.png" alt="github"></a>
-                        <div class="project-info">
-                            <h1>GTSRB CNN</h1>
-                        </div>
-                        <p>open-source contribution to enhance the accuracy of CNNs for predicting road signs using the GTSRB dataset, elevating the validation accuracy from 70% to 92%.</p>
-                        <div class="technology">
-                            <h2>Pytorch </h2>
-                        </div>
+                    <div class="rightdetails">
+                        <img src="./images/KAUST_logo.png" />
                     </div>
-                    <!--
-    <div class="project">
-        <img src="images/reponav.png" alt="Project 9">
-        <a href="https://github.com/ReemAlsharabi/reponav" target="_blank" class="projGitHub"><img src="images/github.png" alt="github"></a>
-        <div class="project-info">
-            <h1>reponav</h1>
-        </div>
-        <p>Python package that allows you to easily navigate the contents of GitHub repositories.</p>
-        <div class="technology">
-            <h2>Python</h2>
-        </div>
-    </div>
-
-    <div class="project">
-        <img src="images/qr.png" alt="Project 9">
-        <a href="https://github.com/ReemAlsharabi/ReemAlsharabi.github.io" target="_blank" class="projGitHub"><img src="images/github.png" alt="github"></a>
-        <div class="project-info">
-            <h1>QR generator</h1>
-        </div>
-        <p>A tool that generates QR codes from URLs in real-time and allows users to save the image.</p>
-        <div class="technology">
-            <h2>JavaScript</h2>
-        </div>
-        <a class="demo" href="qr_generator.html" target="_blank">Try it now</a>
-    </div>
-
-
-
-
-
-                    <div class="project">
-                        <img src="images/gd.png" alt="Project 8">
-                        <a href="https://github.com/ReemAlsharabi/Gradient-Descent-Visualization" target="_blank" class="projGitHub"><img src="images/github.png" alt="github"></a>
-                        <div class="project-info">
-                            <h1>Gradient Descent Visualization</h1>
-                        </div>
-                        <p>3D surface plot and optimization path of gradient descent algorithm for a 2D function.</p>
-                        <div class="technology">
-                            <h2>Python</h2>
-                        </div>
-                    </div>
-                         -->
-                    <div class="project">
-                        <img src="images/na.png" alt="Project 3">
-                        <a href="https://github.com/ReemAlsharabi/Numerical_Analysis" target="_blank" class="projGitHub"><img src="images/github.png" alt="github"></a>
-                        <div class="project-info">
-                            <h1>Numerical Analysis</h1>
-                        </div>
-                        <p>
-                            Various numerical methods implementation for solving mathematical equations.
-                        </p>
-                        <div class="technology">
-                            <h2>MATLAB</h2>
-                        </div>
-                    </div>
-
-                    <span id="dots"></span>
-                    <div id="more">
-
-                        <div class="project">
-                            <img src="images/SLD.png" alt="Project 11">
-                            <a href="https://github.com/ReemAlsharabi/SignLSTM" target="_blank" class="projGitHub"><img src="images/github.png" alt="github"></a>
-                            <div class="project-info">
-                                <h1>SignLSTM</h1>
-                            </div>
-                            <p>Real-time sign language gesture detection system using video/webcam.</p>
-                            <div class="technology">
-                                <h2>Python</h2>
-                                <h2>Keras</h2>
-                                <h2>Mediapipe</h2>
-                            </div>
-
-                        </div>
-
-                        <div class="project">
-                            <img src="images/wag.png" alt="Project 7">
-                            <a href="https://github.com/ReemAlsharabi/word-game" target="_blank" class="projGitHub"><img src="images/github.png" alt="github"></a>
-                            <div class="project-info">
-                                <h1>Word Association Game</h1>
-                            </div>
-                            <p>A game that fetches data from an API based on the chosen difficulty level.</p>
-                            <div class="technology">
-                                <h2>React</h2>
-                                <h2>NodeJS</h2>
-                            </div>
-
-                        </div>
-
-
-
-                        <!--
-        <div class="project">
-            <img src="images/gs.png" alt="Project 6">
-            <a href="https://github.com/ReemAlsharabi/orthonormalization-visualization" target="_blank" class="projGitHub"><img src="images/github.png" alt="github"></a>
-            <div class="project-info">
-                <h1>Orthonormalization Visualization</h1>
-            </div>
-            <p>Interactive 3D scatter plot that visualizes the relationship between input vectors and their orthonormal counterparts.</p>
-            <div class="technology">
-                <h2>Python</h2>
-            </div>
-        </div>
-            -->
-
-
-
-
-                        <div class="project">
-                            <img src="images/oop.png" alt="Project 6">
-                            <a href="https://github.com/ReemAlsharabi/OOP" target="_blank" class="projGitHub"><img src="images/github.png" alt="github"></a>
-                            <div class="project-info">
-                                <h1>
-                                    Movies Repo
-                                </h1>
-                            </div>
-                            <p>Movie rating system enables users to view, add, and rate movies.</p>
-                            <div class="technology">
-                                <h2>Java</h2>
-                                <h2>Swing</h2>
-                                <h2>SQL</h2>
-                            </div>
-                        </div>
-
-
-
-                        <div class="project">
-                            <img src="images/bc.png" alt="Project 4">
-                            <a href="https://github.com/ReemAlsharabi/book-club" target="_blank" class="projGitHub"><img src="images/github.png" alt="github"></a>
-                            <div class="project-info">
-                                <h1>Book Club</h1>
-                            </div>
-                            <p>
-                                Web application for Effat University's book club designed to manage and organize events.
-                            </p>
-                            <div class="technology">
-                                <h2>HTML</h2>
-                                <h2>CSS</h2>
-                                <h2>JS</h2>
-                                <h2>PHP</h2>
-                                <h2>SQL</h2>
-                            </div>
-                        </div>
-
-                        <div class="project">
-                            <img src="images/school.png" alt="Project 5">
-                            <a href="https://github.com/ReemAlsharabi/cpp-school" target="_blank" class="projGitHub"><img src="images/github.png" alt="github"></a>
-                            <div class="project-info">
-                                <h1>School System</h1>
-                            </div>
-                            <p>Program for school data management using OOP and UML class diagram.</p>
-                            <div class="technology">
-                                <h2>C++</h2>
-                                <h2>makefile</h2>
-                            </div>
-                        </div>
-
-
-                    </div>
-
                 </div>
-                <button onclick="projFunction()" class="more-button" id="more-button">More</button>
-            </section>
-        </div>
+
+                <div class="largedetails">
+                    <div class="leftdetails">
+                        <h5>ROS and AI Intern</h5>
+                        <p>Smart Methods</p>
+                        <p>June 2023 – August 2023</p>
+                    </div>
+                    <div class="rightdetails">
+                        <img src="./images/SM_logo.png" />
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+        <section id="projects" class="underlineNav">
+            <h3>Projects</h3>
+
+            <div class="tagline">
+                <div class="largedetails">
+                    <div class="leftdetails">
+                        <h5>The Bias Within: Evaluating the Generation and Classification Dichotomy in Large Language Models</h5>
+                        <p>We conducted two bias detection experiments using GPT-3.5-generated data. The dataset consisted of both biased (with sociocultural stereotypes) and unbiased stories. GPT-3.5 achieved 53% accuracy in classifying its own biases, while the fine-tuned GPT-2 classifier achieved 97.5% validation accuracy. This shows the large performance gap between LLMs' generative and classification abilities. Highliting the need for task-specific training to develop high-quality bias assessments.<br /><br />Additionally, we created a Flask interface for users to directly use the fine-tuned GPT-2 bias classifier.</p>
+                        <a href="https://github.com/ReemAlsharabi/BiasDetectorLLM" target="_blank" class="projGitHub"><img src="images/github.png" alt="github"></a>
+                        <a href="https://reemalsharabi.github.io/docs/The_Bias_Within__Evaluating_the_Generation_and_Classification_Dichotomy_in_Large_Language_Models.pdf" target="_blank" class="projGitHub"><img src="images/paper.png" alt="github"></a>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="tagline">
+                <div class="largedetails">
+                    <div class="leftdetails">
+                        <h5>Road Sign Prediction with GTSRB Dataset</h5>
+                        <p>This open-source project significantly improves the accuracy of CNNs for predicting road signs. Leveraging the GTSRB dataset, various enhancements to the CNN architecture are implemented, resulting in a notable increase in validation accuracy from 70% to 92%. <br /><br />One key finding is that horizontal and vertical flipping, commonly used as augmentations, and sometimes as adversarial defense methods in literature, cannot be implemented for road signs due to label changes.</p>
+                        <a href="https://github.com/ReemAlsharabi/GTSRB-CNN" target="_blank" class="projGitHub"><img src="images/github.png" alt="github"></a>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="tagline">
+                <div class="largedetails">
+                    <div class="leftdetails">
+                        <h5>Numerical Methods for Complex Computations</h5>
+                        <p>Algebraic or "pen-and-paper" approaches may not always be sufficient for certain computations. Tasks like computing integrals, derivatives, or finding function roots can be challenging. This project focuses on exploring numerical solutions for such scenarios. Utilizing MATLAB for implementation.</p>
+                        <a href="https://github.com/ReemAlsharabi/Numerical_Analysis" target="_blank" class="projGitHub"><img src="images/github.png" alt="github"></a>
+                        <a href="https://reemalsharabi.github.io/docs/Math310 final project report_Leen_Rayanah_Reem Spring2022.pdf" target="_blank" class="projGitHub"><img src="images/paper.png" alt="github"></a>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
 
         <div class="highlights">
             <h3>Highlights</h3>
@@ -283,52 +142,39 @@
                     <li>
                         <h4>KAUST Academy</h4>
                         <p>2023</p>
-                        <p>March: Completed with distinction the introduction to AI course at KAUST.</p>
-                        <p>May: Completed with distinction the advanced AI course at KAUST.</p>
-                        <p>July: Started SDAIA-KAUST AI summer program.</p>
+                        <p>Admitted into KAUST Academy after a rigorous selection process that involved over 8000 applicants.</p>
                     </li>
                     <li>
                         <h4>Albanawi List</h4>
                         <p>2021-2022</p>
                         <p>Placed on Albanawi List of academic excellence.</p>
                     </li>
-
                     <li>
-                        <h4>She Codes</h4>
-                        <p>2019</p>
-                        <p>Won the first place in She Codes contest for high school students.</p>
+                        <h4>Effat Scholarship Grant</h4>
+                        <p>2020</p>
+                        <p>Granted a scholarship from Effat University that covers all credit hours required to graduation.</p>
                     </li>
                 </ul>
 
             </section>
         </div>
 
-        
-        
+        <div id="blog" class="underlineNav">
+            <h3>Blog Posts</h3>
+            <div class="blog">
+                <a href="./blog/rnd_walk.html" target="_blank">
+                    <div class="grid-item">
+                        <img src="./images/q2_sim.png" alt="Random walk">
+                        <p>The Random Walk Problem</p>
+                    </div>
+                </a>
+
+            </div>
+            <br /><br /><br />
+        </div>
+
         <div id="contact" class="underlineNav">
             <section>
-                <!--<h3>Contact me</h3>
-            <div class="communication">
-                <form action="https://formsubmit.co/Reem.Alsharabi@outlook.com" method="POST">
-                    <div class="row">
-                        <div class="col-75">
-                            <input type="text" id="name" name="name" placeholder="Name" required>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-75">
-                            <input type="text" id="email" name="email" placeholder="Email" required>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-75">
-                            <textarea id="subject" name="subject" placeholder="Message.." style="height:200px" required></textarea>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <input type="submit" value="Send">
-                    </div>
-                </form>-->
                 <div class="social">
                     <br>
                     <p>Email address: reualsharabi (@) effat.edu.sa</p>
@@ -344,9 +190,7 @@
                 </div>
 
         </div>
-        </section>
-        </div>
-        <!--<div class="sign">Reem :3</div>-->
+
     </main>
 
     <script src="script/myScript.js"></script>
