@@ -543,6 +543,11 @@ a .grid-item:hover {
     .menu.responsive {
         position: relative;
     }
+    .menu {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
 
         .menu.responsive .icon {
             position: absolute;
@@ -565,6 +570,13 @@ a .grid-item:hover {
     .post {
         max-width: 85%;
         margin: 0 auto;
+    }
+        .post img {
+            max-width: 100%;
+            width: 100%;
+        }
+    code {
+        font-size: 0.8em;
     }
 }
 
