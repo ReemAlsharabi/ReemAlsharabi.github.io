@@ -614,3 +614,6 @@ ul li {
 .rightdetails {
     width: 20%;
 }
+.hidden{
+    display: none;
+}
