@@ -56,3 +56,50 @@ function projFunction() {
 
     }
 }
+
+// Theme toggle
+const themeToggle = document.getElementById("theme-toggle");
+
+function updateThemeIcon() {
+    const currentTheme = document.documentElement.getAttribute("data-theme");
+
+    if (currentTheme === "dark") {
+        themeToggle.textContent = "☀";
+        themeToggle.setAttribute("aria-label", "Switch to light mode");
+    } else if (currentTheme === "light") {
+        themeToggle.textContent = "☾";
+        themeToggle.setAttribute("aria-label", "Switch to dark mode");
+    } else {
+        // No manual preference — follow device
+        const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+
+        themeToggle.textContent = prefersDark ? "☀" : "☾";
+        themeToggle.setAttribute(
+            "aria-label",
+            prefersDark ? "Switch to light mode" : "Switch to dark mode"
+        );
+    }
+}
+
+themeToggle.addEventListener("click", () => {
+    const currentTheme = document.documentElement.getAttribute("data-theme");
+
+    if (currentTheme === "dark") {
+        document.documentElement.setAttribute("data-theme", "light");
+        localStorage.setItem("theme", "light");
+    } else {
+        document.documentElement.setAttribute("data-theme", "dark");
+        localStorage.setItem("theme", "dark");
+    }
+
+    updateThemeIcon();
+});
+
+// Load saved preference
+const savedTheme = localStorage.getItem("theme");
+
+if (savedTheme) {
+    document.documentElement.setAttribute("data-theme", savedTheme);
+}
+
+updateThemeIcon();
