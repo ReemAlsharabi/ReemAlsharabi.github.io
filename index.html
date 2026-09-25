@@ -7,8 +7,16 @@
     <meta name="google-site-verification" content="VG0rndKOOja4zWGQ3jv7I0H5-ulv57H0TLfgSytMMHU"/>-->
     <title>Reem Alsharabi</title>
     <link rel="icon" href="images/icon.png" type="image/x-icon">
-    <link href="style/style.css" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script>
+    const savedTheme = localStorage.getItem("theme");
+
+    if (savedTheme) {
+        document.documentElement.setAttribute("data-theme", savedTheme);
+    }
+</script>
+
+<link href="style/style.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <header>
@@ -21,13 +29,15 @@
             <a href="#blog" class="blog">blog</a>
             <a href="#contact" class="contact">contact me</a>
         -->
-
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
-        </div>
         <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
-    ◐
-</button>
-    </header>
+            ◐
+        </button>
+
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+</header>
     <main>
         <section id="home" class="underlineNav">
             <div class="content">
